@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+}
+.tel {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  height: 50%;
+  background-color: #ffc966;
+  margin-top: 500px;
+  margin-top: auto;
+  tranfsorm: rotate(50deg);
+  margin-top: 100px;
+  padding-top: 100px;
+}
+.telega {
+  width: calc(50% - 30px);
+  color: blue;
+  top: 400px;
+  tranfsorm: rotate(50deg);
+}
+@media screen and (max-width: 960px) {
+  .telega {
+    width: calc(100% - 30px);
+  }
+}
+html,
+body {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  height: 100%;
+  background: aqua;
+  transform: rotate(10deg);
+  text-align: center;
+}

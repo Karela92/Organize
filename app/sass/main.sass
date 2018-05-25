@@ -1,0 +1,116 @@
+@import 'smart-grid'
+@import 'fonts'
+@import 'vars'
+@import 'libs'
+
++reset()
+
+body
+  font-family: $default-font
+  margin-left: 100px
+
+.indexBlock 
+    position: absolute
+    font-size: 75px
+    top: -92px
+    color: #010000
+    letter-spacing: 7px
+
+.editBlock
+	position: absolute
+	top: 50%
+	left: 12%
+	padding: 25px
+	background-color: #f0ebe5
+	display: none
+	h1
+		text-align: center
+		margin-bottom: 20px
+	input
+		width: 100%
+		height: 40px
+		padding-left: 15px
+	button
+		display: block
+		margin: 0 auto
+		padding: 20px 40px
+		margin-top: 10px
+		border: 1px solid silver
+		background-color: #f5f1f0
+.activeBlue
+	background-color: pink
+
+.block__organize
+	+row-flex()
+	+justify-content(space-between)
+	margin: 0
+	margin-top: 100px
+	color: #020500
+	.mainwrapBlock
+		+col()
+		+col-4()
+		margin: 0
+		background-color: #ece8e5
+		padding: 100px 20px 40px 20px
+		color: #020500
+		.firstBlock
+			padding: 15px
+			height: 90%
+			font-size: 23px
+			position: relative
+			background-color: white
+			p
+				margin-top: 10px
+			.absoluteBlock
+				position: absolute
+				width: 75%
+				top: 50%
+				left: 20%
+				transfort: translate(50%, 50%)
+				padding: 20px
+				border: 1px solid black
+				background-color: #f5f1f0
+				display: none
+				h1
+					text-align: center
+					margin-bottom: 20px
+				input
+					width: 100%
+				button
+					display: block
+					margin: 0 auto
+					padding: 20px 40px
+					margin-top: 10px
+					border: 1px solid silver
+					background-color: #f6f2f1
+			.buttons
+				position: absolute
+				bottom: -75px
+				button
+					margin-top: 25px
+					background-color: white
+					border: 1px solid #f5f1f0
+					padding: 20px 40px
+					margin-right: 10px
+					cursor: pointer
+
+	.secondBlock
+		+col()
+		+col-8()
+		margin: 0
+
+ul
+	margin-top: 100px
+	cursor: pointer
+	color: #020500
+	li
+		display: inline-block
+		padding: 40px
+		border: 1px solid #c5c3c4
+		width: 14%
+		font-size: 30px
+		text-align: center
+p
+	margin-top: 50px
+
+@import 'media'
